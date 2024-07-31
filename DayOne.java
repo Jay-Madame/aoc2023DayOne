@@ -25,7 +25,7 @@ public class DayOne {
                         if (!isOutput1Full) {
                             output1 = digitValue;
                             isOutput1Full = true;
-                        } else if (isOutput1Full && !isOutput2Full) {
+                        } else if (isOutput1Full) {
                             output2 = digitValue;
                             isOutput2Full = true;
                         }
@@ -40,7 +40,6 @@ public class DayOne {
             }
         } catch (IOException e) {
             e.printStackTrace();
-            ;
         }
         System.out.println(total);
     }
